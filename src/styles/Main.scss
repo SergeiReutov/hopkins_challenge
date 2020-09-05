@@ -1,0 +1,58 @@
+@import 'styles/Constants';
+
+body {
+  margin: 0;
+
+  .main-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    header {
+      height: 2.5em;
+    }
+
+    main {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media (max-width: $s) { // xs
+  html {
+    font-size: 10px;
+  }
+}
+
+
+@media (min-width: $s) and (max-width: $sm) { // s
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $sm) and (max-width: $m) { // sm
+  html {
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .main-app {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-app {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .main-app {
+    max-width: 1200px;
+  }
+}

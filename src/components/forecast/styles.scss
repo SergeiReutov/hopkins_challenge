@@ -1,0 +1,9 @@
+@import 'styles/Colors';
+
+main.forecastContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $containerBackgroundColor;
+  padding: 1em;
+}

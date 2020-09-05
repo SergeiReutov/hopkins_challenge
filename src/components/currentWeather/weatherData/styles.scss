@@ -1,0 +1,18 @@
+@import 'styles/Mixins';
+
+.weatherData {
+  .weatherDataRow {
+    @include flexVerticalCentered;
+
+    svg {
+      width: 1em;
+      height: 1em;
+      margin-right: 0.5em;
+    }
+
+    &.nameOfToday {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+  }
+}

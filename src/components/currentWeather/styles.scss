@@ -1,0 +1,23 @@
+@import 'styles/Constants';
+
+.currentWeather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .currentWeatherIcon {
+    width: 10em;
+    height: 10em;
+  }
+
+  .currentWeatherTemp {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: $s - 1) {
+  .currentWeather > .currentWeatherTemp {
+    font-size: 4em;
+  }
+}
+

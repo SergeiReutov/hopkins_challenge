@@ -1,0 +1,5 @@
+@import 'styles/Mixins';
+
+.dailyForecast {
+  @include flexCentered;
+}
